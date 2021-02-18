@@ -91,7 +91,7 @@ button_clear.place(relx=0, rely=0.8, relwidth=0.25, relheight=0.2)
 button0 = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="0", command= lambda: button_click("0"))
 button0.place(relx=0.25, rely=0.8, relwidth=0.25, relheight=0.2)
 
-button_divide = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="/")
+button_divide = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="/", command= lambda: button_click("/"))
 button_divide.place(relx=0.5, rely=0.8, relwidth=0.25, relheight=0.2)
 
 button_equal = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="=", command= lambda: solve_it())
