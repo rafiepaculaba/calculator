@@ -30,9 +30,10 @@ def solve_it():
     global value
     entry.delete(0, 'end')
     value = eval(value)
+    value = str(value)
     print(type(value))
     print(value)
-    str(value)
+
     print(type(value))
     entry.insert('end', str(value))
 
@@ -87,7 +88,7 @@ button_multiply.place(relx=0.75, rely=0.6, relwidth=0.25, relheight=0.2)
 button_clear = tk.Button(frame, font=('Tahoma', 30), bg="red", bd=5, text="C", command= lambda: clear_it())
 button_clear.place(relx=0, rely=0.8, relwidth=0.25, relheight=0.2)
 
-button0 = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="0")
+button0 = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="0", command= lambda: button_click("0"))
 button0.place(relx=0.25, rely=0.8, relwidth=0.25, relheight=0.2)
 
 button_divide = tk.Button(frame, font=('Tahoma', 30), bg="gray", bd=5, text="/")
